@@ -1,0 +1,86 @@
+/* Importando una fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    background-color: #f9e6e1; /* Color suave de fondo */
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #4e4e4e;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estilo para el contenedor del mensaje con fondo bonito */
+.message-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    padding: 30px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Playfair Display', serif; /* Fuente elegante para los mensajes */
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.message-container:hover {
+    transform: scale(1.05); /* Efecto de zoom suave cuando pasa el mouse */
+}
+
+/* Estilo de los mensajes */
+p {
+    font-size: 1.3em;
+    margin: 0;
+    line-height: 1.6;
+    color: #4e4e4e;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil para resaltar el texto */
+    transition: opacity 0.5s ease;
+}
+
+/* Estilo de las estrellas como iconos */
+.star {
+    position: absolute;
+    font-size: 24px;
+    color: gold;
+    animation: moveStar 10s linear infinite;
+}
+
+@keyframes moveStar {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(calc(100vw * 1), calc(100vh * 1));
+        opacity: 0;
+    }
+}
+
+/* Estilo para el fondo con animaciones */
+body {
+    background: linear-gradient(45deg, #ff9a8b, #ff6a88, #ff76a0); /* Un fondo de colores cálidos */
+    background-size: 400% 400%; /* Fondo con gradiente animado */
+    animation: gradientAnimation 10s ease infinite; /* Animación de gradiente */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
