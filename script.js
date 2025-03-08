@@ -59,3 +59,10 @@ document.body.addEventListener("click", () => {
         }, 500);
     }
 });
+
+document.addEventListener("click", function() {
+    let audio = document.getElementById("background-music");
+    if (audio.paused) {
+        audio.play().catch(error => console.log("Error al reproducir el audio:", error));
+    }
+});
